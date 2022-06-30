@@ -25,6 +25,7 @@ React Native
 With SWR, components will get a stream of data updates constantly and automatically. Thus, the UI will be always fast and reactive.
 # Quick Start With useSWR
 
+<code>
 import useSWR from 'swr'
 
 function Profile() {
@@ -34,6 +35,8 @@ function Profile() {
   if (!data) return <div>loading...</div>
   return <div>hello {data.name}!</div>
 }
+  
+  </code>
 In this example, the React Hook useSWR accepts a key and a fetcher function. The key is a unique identifier of the request, normally the URL of the API. And the fetcher accepts key as its parameter and returns the data asynchronously.
 
 useSWR also returns 2 values: data and error. When the request (fetcher) is not yet finished, data will be undefined. And when we get a response, it sets data and error based on the result of fetcher and rerenders the component.
