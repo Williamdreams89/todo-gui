@@ -6,11 +6,11 @@ function FooterSearch() {
   const StyledFooter = styled.div`
     position: fixed;
     bottom: 0;
-    width: 100vw;
+    width: 520px;    
     height: 5rem;
     background-color: white;
     z-index:100;
-    border: 1px solid gray;
+    border-top: 1px solid gray;
     display:flex;
     flex-direction:column;
     align-items: center;

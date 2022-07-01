@@ -6,10 +6,17 @@ import Todos from './Todos';
 
 function Gui() {
   const StyledGUI = styled.div`
-    width: 100vw;
+    max-width: 520px;
     height: 90vh;
     background-color: white;
     overflow-y: scroll;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 520px){
+      margin-top: 0
+    }
   `;
 
   return (

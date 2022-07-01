@@ -2,6 +2,7 @@ import React from 'react';
 import {FaToolbox, FaParachuteBox, FaCircleNotch} from "react-icons/fa"
 import styled from 'styled-components';
 
+
 function Nav() {
     const StyledNav = styled.div`
         display: flex;

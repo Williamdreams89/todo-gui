@@ -4,7 +4,9 @@ import { Md2KPlus } from "react-icons/md";
 import FilterBody from "./FilterBody";
 
 function Todos({ name }) {
-  const StyledTodoss = styled.div``;
+  const StyledTodoss = styled.div`
+    max-width: 520px;
+  `;
   return (
     <StyledTodoss>
       <Filter name="Today" />
@@ -38,7 +40,7 @@ function Filter({ name }) {
     }
   `;
   const Container = styled.div`
-    width: 90vw;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
