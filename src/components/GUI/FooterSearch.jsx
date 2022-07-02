@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { FaPlusCircle } from "react-icons/fa";
-
+import { FaPlusCircle, FaCheckCircle, FaCalendar } from "react-icons/fa";
+import {GiGears} from "react-icons/gi"
 function FooterSearch() {
   const StyledFooter = styled.div`
     position: fixed;
@@ -51,7 +51,19 @@ function FooterSearch() {
             margin-left: 5px;
         }
     }
-}
+
+    
+  }
+  .options div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &>*{
+      cursor: pointer;
+    }
+  }
 `;
 return (
     <StyledFooter>
@@ -62,9 +74,16 @@ return (
         </span>
       </div>
       <div className="options">
-        <div>Tasks</div>
-        <div>Calender</div>
-        <div>Setting</div>
+        <div>
+          <FaCheckCircle />
+          Tasks
+          </div>
+        <div>
+          <FaCalendar />
+          Calender</div>
+        <div>
+          <GiGears />
+          Setting</div>
       </div>
     </StyledFooter>
   );
